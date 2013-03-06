@@ -1,0 +1,46 @@
+{
+  "name": "grunt-component-builder",
+  "description": "Build component",
+  "version": "0.1.0",
+  "homepage": "https://github.com/smhg/grunt-component-builder",
+  "author": {
+    "name": "smhg",
+    "email": "sam@strictlyphp.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smhg/grunt-component-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smhg/grunt-component-builder/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/smhg/grunt-component-builder/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt": "~0.4.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin", "component", "grunt", "build", "builder"
+  ],
+  "dependencies": {
+    "component-builder": "~0.6.3",
+  }
+}
