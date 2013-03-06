@@ -2,7 +2,8 @@
 
 'use strict';
 
-var grunt = require('grunt');
+var grunt = require('grunt'),
+  normalize = grunt.util.normalizelf;
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -32,8 +33,8 @@ exports.component_builder = {
   def: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/default.js');
-    var expected = grunt.file.read('test/expected/default.js');
+    var actual = normalize(grunt.file.read('tmp/default.js'));
+    var expected = normalize(grunt.file.read('test/expected/default.js'));
     test.equal(actual, expected, 'one script, no special options');
 
     test.done();
@@ -41,8 +42,8 @@ exports.component_builder = {
   default_dependency: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/default-dependency.js');
-    var expected = grunt.file.read('test/expected/default-dependency.js');
+    var actual = normalize(grunt.file.read('tmp/default-dependency.js'));
+    var expected = normalize(grunt.file.read('test/expected/default-dependency.js'));
     test.equal(actual, expected, 'one script, one dependency, no special options');
 
     test.done();
