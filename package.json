@@ -1,28 +1,29 @@
 {
-  "name": "grunt-component-builder",
-  "description": "Build component",
+  "name": "grunt-component",
+  "description": "Wrapper around component for grunt",
   "version": "0.1.0",
-  "homepage": "https://github.com/smhg/grunt-component-builder",
+  "homepage": "https://github.com/smhg/grunt-component",
   "author": {
     "name": "smhg",
     "email": "sam@strictlyphp.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/smhg/grunt-component-builder.git"
+    "url": "https://github.com/smhg/grunt-component.git"
   },
   "bugs": {
-    "url": "https://github.com/smhg/grunt-component-builder/issues"
+    "url": "https://github.com/smhg/grunt-component/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/smhg/grunt-component-builder/blob/master/LICENSE-MIT"
+      "url": "https://github.com/smhg/grunt-component/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.8.0",
+    "component": "0.13.*"
   },
   "scripts": {
     "test": "grunt test"
@@ -38,9 +39,9 @@
     "grunt": "~0.4.0"
   },
   "keywords": [
-    "gruntplugin", "component", "grunt", "build", "builder"
+    "gruntplugin", "component", "grunt"
   ],
   "dependencies": {
-    "component-builder": "~0.6.3",
+    "grunt-lib-contrib": "0.5.*"
   }
 }
