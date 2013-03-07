@@ -1,6 +1,6 @@
 # grunt-component
 
-> Build component
+> Wrapper around [component(1)](https://github.com/component/component)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
