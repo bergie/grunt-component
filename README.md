@@ -26,64 +26,90 @@ In your project's Gruntfile, add a section named `component` to the data object 
 grunt.initConfig({
   component: {
     options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
+      // ...
+    }
   },
 })
 ```
 
 ### Options
 
-#### options.separator
-Type: `String`
-Default value: `',  '`
-
-A string value that is used to do something with whatever.
-
-#### options.punctuation
+#### options.cwd
 Type: `String`
 Default value: `'.'`
 
-A string value that is used to do something else with whatever else.
+The directory where component(1) is executed. Typically this points to the directory of component.json.
+
+#### options.action
+Type: `String`
+Default value: `'build'`
+
+The action (first parameter) of component(1).
+
+#### options.args
+Type: `Object`
+Default value: `{}`
+
+Additional arguments to action (first parameter) of component(1).
+
+Example:
+```js
+grunt.initConfig({
+  component: {
+    options: {
+      action: 'build', // can be omitted (build = default)
+      args: {
+        standalone: '$',
+        dev: true
+      }
+    }
+  }
+})
+```
+_Note_: property names can be the long or short version of the actual parameters to component(1).
+
 
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+To execute _component build_ in the current directory:
 
 ```js
 grunt.initConfig({
   component: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+    options: {}
+  }
 })
 ```
 
 #### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+To execute _component build_ in a different directory with the --dev option:
 
 ```js
 grunt.initConfig({
   component: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+      cwd: 'other/directory'
+      args: {
+        dev: true
+      }
+    }
+  }
 })
 ```
+To execute _component install_:
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+```js
+grunt.initConfig({
+  component: {
+    options: {
+      action: 'install'
+    }
+  }
+})
+```
+This can of course also be combined with the `cwd` option.
+
 
 ## Release History
 _(Nothing yet)_
