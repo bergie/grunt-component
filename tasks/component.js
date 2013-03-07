@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       options = this.options({
         cwd: '.',
         action: 'build',
-        args: []
+        args: {}
       }),
       cmd = 'component',
       processOptions = {
