@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/smhg/grunt-component.png?branch=master)](https://travis-ci.org/smhg/grunt-component)
 # grunt-component
 
 > Wrapper around [component(1)](https://github.com/component/component)
