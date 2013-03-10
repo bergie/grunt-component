@@ -39,9 +39,12 @@
     "grunt": "~0.4.0"
   },
   "keywords": [
-    "gruntplugin", "component", "grunt"
+    "gruntplugin",
+    "component",
+    "grunt"
   ],
   "dependencies": {
-    "grunt-lib-contrib": "0.5.x"
+    "grunt-lib-contrib": "0.5.x",
+    "component": "~0.13.0"
   }
 }
