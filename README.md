@@ -112,4 +112,6 @@ This can of course also be combined with the `cwd` option.
 
 
 ## Release History
-_(Nothing yet)_
+
+* 2013-03-07   v0.1.1   Fixed bad dependency version string
+* 2013-03-07   v0.1.0   Initial release
