@@ -22,8 +22,7 @@
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": ">= 0.8.0",
-    "component": "0.13.*"
+    "node": ">= 0.8.0"
   },
   "scripts": {
     "test": "grunt test"
@@ -36,7 +35,8 @@
     "grunt": "~0.4.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": "~0.4.0",
+    "component": "0.13.x"
   },
   "keywords": [
     "gruntplugin",
@@ -44,7 +44,6 @@
     "grunt"
   ],
   "dependencies": {
-    "grunt-lib-contrib": "0.5.x",
-    "component": "~0.13.0"
+    "grunt-lib-contrib": "0.5.x"
   }
 }
