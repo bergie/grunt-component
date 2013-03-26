@@ -26,8 +26,10 @@ In your project's Gruntfile, add a section named `component` to the data object 
 ```js
 grunt.initConfig({
   component: {
-    options: {
-      // ...
+    build: {
+      options: {
+        // ...
+      }
     }
   },
 })
