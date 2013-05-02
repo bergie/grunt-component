@@ -43,6 +43,7 @@
     "grunt"
   ],
   "dependencies": {
-    "grunt-lib-contrib": "0.5.x"
+    "grunt-lib-contrib": "0.5.x",
+    "component": "~0.15.1"
   }
 }
