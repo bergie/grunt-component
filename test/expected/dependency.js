@@ -320,5 +320,6 @@ each(arr, function (item, index) {
 });
 });
 require.alias("component-each/index.js", "undefined/deps/each/index.js");
+require.alias("component-each/index.js", "each/index.js");
 require.alias("component-type/index.js", "component-each/deps/type/index.js");
 
