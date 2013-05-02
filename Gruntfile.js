@@ -12,7 +12,11 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     clean: {
-      tests: ['tmp', 'test/fixtures/dependency/components'],
+      tests: ['tmp', 'test/fixtures/dependency/components']
+    },
+    jshint: {
+      grunt: ['*.js'],
+      tasks: ['tasks/*.js']
     },
     component: {
       'default': {
@@ -51,7 +55,7 @@ module.exports = function (grunt) {
       }
     },
     nodeunit: {
-      tests: ['test/*_test.js'],
+      tests: ['test/*_test.js']
     },
     watch: {
       files: ['tasks/*', 'test/*', 'package.json', 'Gruntfile.js'],
@@ -66,7 +70,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('test', ['clean', 'component', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'jshint', 'component', 'nodeunit']);
 
   grunt.registerTask('default', ['test']);
 };
