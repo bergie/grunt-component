@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/smhg/grunt-component.png?branch=master)](https://travis-ci.org/smhg/grunt-component)
 # grunt-component
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bergie/grunt-component.svg)](https://greenkeeper.io/)
+
 > Wrapper around [component(1)](https://github.com/component/component)
 
 ## Getting Started
